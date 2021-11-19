@@ -2,17 +2,17 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "ysxro-theme"
-license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+license = "GNU General Public License v3.0"
+licenselink = "https://github.com/deomorxsy/ysxrHUGYo/blob/main/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://github.com/deomorxsy/ysxrHUGYo/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "deomorxsy"
-  homepage = "https://github.com/deomorxsy.github.io"
+  homepage = "https://deomorxsy.github.io"
 
 # If porting an existing theme
 [original]
