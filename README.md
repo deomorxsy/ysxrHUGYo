@@ -1,5 +1,5 @@
 # About
-Personal website, built from the scratch with HTML and CSS, ported from Jekyll SSG with Liquid template language from to Hugo SSG with golang template language. Template based on the [previous one](https://github.com/deomorxsy/deomorxsy.github.io/), made with Jekyll as Static Site Generator.
+Personal website, built from the scratch with HTML and CSS, ported from Jekyll SSG with Liquid template language from to Hugo SSG with golang template language. Template based on my [previous one](https://github.com/deomorxsy/deomorxsy.github.io/), made with Jekyll as Static Site Generator.
 
 # Usage
 
