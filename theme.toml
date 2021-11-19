@@ -11,8 +11,8 @@ features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "irasa"
+  homepage = "https://github.com/deomorxsy.github.io"
 
 # If porting an existing theme
 [original]

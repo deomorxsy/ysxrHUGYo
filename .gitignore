@@ -1,2 +1,6 @@
 test-git-rename-repository
 testing-mv-command-itself
+
+index-template.html
+layouts/_default/2-baseof.html
+
