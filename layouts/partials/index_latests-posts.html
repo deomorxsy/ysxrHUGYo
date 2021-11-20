@@ -22,10 +22,10 @@ It goes on index page: Latest posts session. The limit of shown posts are 8.
 </h3>
 
 <ul class="myposts-index">
-{% for post in site.posts limit:8 %}
+{{ range $page := first 10 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }} {{end}}
 	<ul class="alter-padding" style="padding-left: 0px; margin-left: 0px;">
-    <span class="old-postDate">{{ post.date | date: "%b %d %Y  ー" }}</span>
-    <a class="post-article" href="{{ post.url }}">{{ post.title }}</a>
+    <span class="old-postDate">{{ .Date.Format "Jan 2, 2006" }}</span>
+    <a class="post-article" href="{{ .Permalink }}">{{ .Title }}</a>
 	</ul>
 {% endfor %}
 </ul>
