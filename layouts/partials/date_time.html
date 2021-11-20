@@ -1,0 +1,27 @@
+<time class="article-date" datetime="{{ .Date.Format "Jan 2, 2006" }}">
+  datetime
+</time>
+
+<span class="article-date" title="Estimated read time">
+
+    {{ $scratch := newScratch }}
+    {{ range (where .Site.RegularPages "Type" "in" (slice "blog")) }}
+    {{ $scratch.Add "wordcount" .WordCount }}
+    {{ end }}
+
+    {{ $scratch.Get "wordcount" | lang.Numfmt 0 }}
+    {{ $words :=  .WordCount }}
+
+
+    {{ if (lt $words 360) }} 1 min {{/* if (checks if $words is less than 360) */}}
+    {{ else }}
+    {{ div $words 180 }} mins   {{/* divides variable words by 180. */}}
+    {{ end }}
+</span>
+
+{{ $words := .WordCount }}
+  {{ if (lt $words  270) }}
+    1 minute
+  {{ else }}
+    {{ div  $words 135 }} minutes
+  {{ end }}

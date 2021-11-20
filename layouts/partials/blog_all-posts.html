@@ -1,0 +1,4 @@
+<ul class="myposts-index">
+{{ range $page := first 10 ( where .Site.RegularPages "Section" "in" .Site.Params.mainSections ) }}   {{ end }}
+
+</ul>
