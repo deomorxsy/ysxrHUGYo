@@ -19,7 +19,7 @@
       {{ $pages_list := .Site.Pages }} {{/* COMMENT: | sort:"url" */}}
       {{ range $pages_list := (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)}} {{ end }}
       {{ with  .Site.Title }} {{/*"ne" Returns the boolean truth of arg1 != arg2; But since there is no "null" primitive in hugo template language, with can be used. with also replaces if.*/}}
-        {{ if node.layout == "page" }}
+        {{ if $node.layout == "page" }}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
